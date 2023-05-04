@@ -24,12 +24,14 @@ function App(){
   return(<div>
     <Header/>
     <Main/>
+    <Button/>
+    <Card/>
   </div>
 
   )
 }
 
-function button(){
+function Button(){
   return(
 <button>
 <button>  
@@ -71,8 +73,24 @@ function button(){
       </main>
       )
   }
- function button(){return(<div></div>)}
- function card(){return(<div></div>)}
+ function button(){
+  return(
+  <div>
+    <button>
+  <span role="img">😸</span>
+  Cats
+</button>
+<button>
+  <span role="img">🐕</span>
+  Dogs
+</button></div>)}
+
+ function Card(){
+  return(
+  <div>
+  <h2>Welcome to PetLand!</h2>
+ <em>Find your dream pet</em>
+ <h2>What pets would you like to see?</h2></div>)}
 
 root.render(
   <React.StrictMode>
