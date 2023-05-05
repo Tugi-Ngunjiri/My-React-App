@@ -11,10 +11,7 @@ function Header(){
     <header>
     <h1>PetLand</h1>
     <nav>
-      <button>
-        <span role="img">👤</span>
-        Login
-      </button>
+      <Button buttonIcon="👤"  buttonName="Login"></Button>
     </nav>
   </header>
       
@@ -24,38 +21,34 @@ function App(){
   return(<div>
     <Header/>
     <Main/>
-    <Button/>
     <Card/>
   </div>
 
   )
 }
 
-function Main(){
+function Main(Props){
     return(
 <main>
-        <div className="card">
+    <div className="card">
         </div>
-        <div className="card">
-    
-          <div>
-          
-          </div>
+          <div className="card">
+            <div>
+              <Button buttonIcon="😸"  buttonName="Cat"></Button>
+                <Button buttonIcon="🐕"  buttonName="Dog"></Button>
+            </div>
         </div>
-      </main>
+   </main>
       )
   }
- function Button(){
+ function Button(props){
   return(
-  <div>
-    <button>
-  <span role="img">😸</span>
-  Cats
-</button>
-<button>
-  <span role="img">🐕</span>
-  Dogs
-</button></div>)}
+    <div>
+      <button>
+        <span role="img">{props.buttonIcon}</span>
+        {props.buttonName}
+     </button>
+  </div>)}
 
  function Card(){
   return(
