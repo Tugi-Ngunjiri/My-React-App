@@ -1,8 +1,8 @@
 function Card(props){
     return(
     <div classname="card">
-    <h2>{props.cardHeading}</h2>
-    {props.children}
+    <h2>{props.name}</h2>
+    {props.image}
   </div>
   
   )};

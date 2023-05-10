@@ -14,9 +14,9 @@ function PetCard(props) {
       <h3>Favorite Snacks</h3>
       <ul>
       {/* render snacks here */}
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Fezzik<li> 1.Peanut butter , 2.Soccer Balls</li></li>
+      <li>Lucy<li>1.Cake , 2.Bacon</li></li>
+      <li>Blaise<li>1.Pigeons , 2.Grass , 3.Chicken</li></li>
       </ul>
     </div>
   )

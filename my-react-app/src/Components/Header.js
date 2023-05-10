@@ -1,5 +1,4 @@
-import Button from "./Button";
-import PetCard from "./PetCard";
+import Button from "./Button"
 
 function Header(){
     return(
