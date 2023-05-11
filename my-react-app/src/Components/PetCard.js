@@ -1,10 +1,10 @@
-
+import ListItem from "./ListItem";
 
 function PetCard(props) {
 const favSnacks = props.favSnacks;
 console.log(favSnacks);
 
-const favSnacksList = favSnacks.map((favSnack) =>{
+const favSnacksList = favSnacks.map((favSnack) =>{ <ListItem favSnack={favSnack}></ListItem>
   return <li key={favSnack}>{favSnack}</li>
 }
   );
