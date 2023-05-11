@@ -1,9 +1,10 @@
-function Button(props){
+function Button({buttonIcon , buttonName}){
     return(
       <div>
         <button>
-          <span role="img">{props.buttonIcon}</span>
-          {props.buttonName}
+          <span role="img">               
+          {buttonIcon}</span>
+          {buttonName}
        </button>
     </div>)}
 
