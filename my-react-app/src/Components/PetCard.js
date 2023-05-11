@@ -14,8 +14,8 @@ const favSnacksList = favSnacks.map((favSnack) =>{ <ListItem favSnack={favSnack}
   return (
     <div className="card">
       <h2>{props.name}</h2>
-      <img src={props.image} alt={props.name} />
-      
+      <img src={image} alt={name} />
+      <h3>Favorite Snacks</h3>
       <ul>
       {/* render snacks here */}
     {favSnacksList}
