@@ -1,7 +1,7 @@
 import ListItem from "./ListItem";
 
-function PetCard(props) {
-const favSnacks = props.favSnacks;
+function PetCard(favSnacks, name, image) {
+
 console.log(favSnacks);
 
 const favSnacksList = favSnacks.map((favSnack) =>{ <ListItem favSnack={favSnack}></ListItem>
