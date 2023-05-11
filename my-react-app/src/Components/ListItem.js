@@ -1,7 +1,7 @@
 
-function ListItem() {
+function ListItem(favSnack) {
   return (
-  <li key={props.favSnack}>(props.favSnack)</li>
+  <li key={favSnack}>{favSnack}</li>
   )
 }
  export default ListItem
