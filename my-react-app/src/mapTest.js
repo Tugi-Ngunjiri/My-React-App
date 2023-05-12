@@ -1,6 +1,19 @@
-const myArray= [2 ,5 ,10 ,3, 7];
-console.log(myArray);
-const doubles = myArray.map(num=>{
-  return num * 2;
-});
-console.log(doubles);
+const isLoggedIn = false;
+
+// if (isLoggedIn){
+//   console.log("I'm logged in");
+// } else {
+//   console.log("I'm logged out");
+// }
+
+console.log(isLoggedIn ? "I'm logged in" : "I'm logged out");
+
+// function getLoggedIn(isLoggedIn) {
+//   return (isLoggedIn? 'Logged in' : '$Logged out');
+// }
+// console.log(getLoggedIn(true));
+// // Expected output: "$loggedIn"
+// console.log(getLoggedIn(false));
+// // Expected output: "$LogOut"
+// console.log(getLoggedIn(null));
+// // Expected output: "$logIn/LogOut"

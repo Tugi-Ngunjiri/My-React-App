@@ -1,15 +1,18 @@
-import Button from "./Button"
+import Login from "./Login";
+import Logout from "./Logout";
 
-function Header(){
-    return(
-      <header>
+
+function Header({isLoggedIn}){
+  
+  return (
+    <header>
       <h1>PetLand</h1>
       <nav>
-        <Button buttonIcon="👤"  buttonName="Login"></Button>
-  
+        {isLoggedIn ? <Logout /> : <Login />}
+
       </nav>
     </header>
-        
-    )
-  }
-   export default Header;
+  );
+}
+
+export default Header;
